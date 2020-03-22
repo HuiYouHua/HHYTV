@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9532420D91300890FC3 /* AppDelegate.swift */; };
+		7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9552420D91300890FC3 /* SceneDelegate.swift */; };
+		7841C95B2420D91300890FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7841C9592420D91300890FC3 /* Main.storyboard */; };
+		7841C95D2420D91300890FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7841C95C2420D91300890FC3 /* Assets.xcassets */; };
+		7841C9602420D91300890FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7841C95E2420D91300890FC3 /* LaunchScreen.storyboard */; };
+		7841C9702420D9E500890FC3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C96F2420D9E500890FC3 /* MainViewController.swift */; };
+		7841C9722420DA0300890FC3 /* HHYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9712420DA0300890FC3 /* HHYNavigationController.swift */; };
+		7841C9762420DA3F00890FC3 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9752420DA3F00890FC3 /* RankViewController.swift */; };
+		7841C9782420DA4700890FC3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9772420DA4700890FC3 /* DiscoverViewController.swift */; };
+		7841C97A2420DA4F00890FC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9792420DA4F00890FC3 /* ProfileViewController.swift */; };
+		7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841CA8A24220F7A00890FC3 /* UIColor-Extension.swift */; };
+		7872C33A2423704700C7A1FB /* ScreenFrameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3392423704700C7A1FB /* ScreenFrameExtension.swift */; };
+		7872C3D024237CDD00C7A1FB /* HHYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CC24237CDD00C7A1FB /* HHYContentView.swift */; };
+		7872C3D124237CDD00C7A1FB /* HHYTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CD24237CDD00C7A1FB /* HHYTitleStyle.swift */; };
+		7872C3D224237CDD00C7A1FB /* HHYTitileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CE24237CDD00C7A1FB /* HHYTitileView.swift */; };
+		7872C3D324237CDD00C7A1FB /* HHYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CF24237CDD00C7A1FB /* HHYPageView.swift */; };
+		7872C3DA24237D1F00C7A1FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3D624237D1F00C7A1FB /* HomeViewController.swift */; };
+		7872C3DF24237D6500C7A1FB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3DE24237D6500C7A1FB /* Const.swift */; };
+		7872C3E124237E3600C7A1FB /* AnchorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3E024237E3600C7A1FB /* AnchorController.swift */; };
+		7872C3E424237E6800C7A1FB /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7872C3E324237E6800C7A1FB /* types.plist */; };
+		7872C3E924237ECB00C7A1FB /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3E824237ECB00C7A1FB /* BaseModel.swift */; };
+		7872C3EB24237F1400C7A1FB /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3EA24237F1400C7A1FB /* HomeType.swift */; };
+		7872C442242386A400C7A1FB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C441242386A400C7A1FB /* HomeViewModel.swift */; };
+		7872C444242386B400C7A1FB /* HHYWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C443242386B400C7A1FB /* HHYWaterFallLayout.swift */; };
+		7872C4462423875D00C7A1FB /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C4452423875D00C7A1FB /* AnchorModel.swift */; };
+		7872C4492423881900C7A1FB /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C4472423881900C7A1FB /* HomeViewCell.swift */; };
+		7872C44A2423881900C7A1FB /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7872C4482423881900C7A1FB /* HomeViewCell.xib */; };
+		78A821F82424734A007AA69D /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A821F72424734A007AA69D /* NetworkTools.swift */; };
+		78A821FA2424735A007AA69D /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A821F92424735A007AA69D /* KingfisherExtension.swift */; };
+		78A8220124249615007AA69D /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A821FF24249615007AA69D /* RoomViewController.swift */; };
+		78A8220224249615007AA69D /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A8220024249615007AA69D /* RoomViewController.xib */; };
+		78A822292424BFAA007AA69D /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A822282424BFAA007AA69D /* Emitterable.swift */; };
+		78A8222D2424C5CF007AA69D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8222C2424C5CF007AA69D /* NibLoadable.swift */; };
+		78A822302424CA12007AA69D /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78A8222E2424CA12007AA69D /* QHNormalEmotionSort.plist */; };
+		78A822312424CA12007AA69D /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78A8222F2424CA12007AA69D /* QHSohuGifSort.plist */; };
+		7F6E02CD8759215CFF4DE799 /* Pods_HHYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BEAB009690711E2ED328DA1 /* Pods-HHYTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHYTV.release.xcconfig"; path = "Target Support Files/Pods-HHYTV/Pods-HHYTV.release.xcconfig"; sourceTree = "<group>"; };
+		4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7841C9502420D91300890FC3 /* HHYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7841C9532420D91300890FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7841C9552420D91300890FC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7841C95A2420D91300890FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7841C95C2420D91300890FC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7841C95F2420D91300890FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7841C9612420D91300890FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7841C96F2420D9E500890FC3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7841C9712420DA0300890FC3 /* HHYNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHYNavigationController.swift; sourceTree = "<group>"; };
+		7841C9752420DA3F00890FC3 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		7841C9772420DA4700890FC3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		7841C9792420DA4F00890FC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7841C97B2420DFA400890FC3 /* HHYTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHYTV-Bridging-Header.h"; sourceTree = "<group>"; };
+		7841CA8A24220F7A00890FC3 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		7872C3392423704700C7A1FB /* ScreenFrameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenFrameExtension.swift; sourceTree = "<group>"; };
+		7872C3CC24237CDD00C7A1FB /* HHYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYContentView.swift; sourceTree = "<group>"; };
+		7872C3CD24237CDD00C7A1FB /* HHYTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYTitleStyle.swift; sourceTree = "<group>"; };
+		7872C3CE24237CDD00C7A1FB /* HHYTitileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYTitileView.swift; sourceTree = "<group>"; };
+		7872C3CF24237CDD00C7A1FB /* HHYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYPageView.swift; sourceTree = "<group>"; };
+		7872C3D624237D1F00C7A1FB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7872C3DE24237D6500C7A1FB /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		7872C3E024237E3600C7A1FB /* AnchorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorController.swift; sourceTree = "<group>"; };
+		7872C3E324237E6800C7A1FB /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		7872C3E824237ECB00C7A1FB /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		7872C3EA24237F1400C7A1FB /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		7872C441242386A400C7A1FB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7872C443242386B400C7A1FB /* HHYWaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYWaterFallLayout.swift; sourceTree = "<group>"; };
+		7872C4452423875D00C7A1FB /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		7872C4472423881900C7A1FB /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		7872C4482423881900C7A1FB /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		78A821F72424734A007AA69D /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		78A821F92424735A007AA69D /* KingfisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		78A821FF24249615007AA69D /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		78A8220024249615007AA69D /* RoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		78A822282424BFAA007AA69D /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		78A8222C2424C5CF007AA69D /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		78A8222E2424CA12007AA69D /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		78A8222F2424CA12007AA69D /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		ADE25DB60962C84808AC63F4 /* Pods-HHYTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHYTV.debug.xcconfig"; path = "Target Support Files/Pods-HHYTV/Pods-HHYTV.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7841C94D2420D91300890FC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F6E02CD8759215CFF4DE799 /* Pods_HHYTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7841C9472420D91200890FC3 = {
+			isa = PBXGroup;
+			children = (
+				7841C9522420D91300890FC3 /* HHYTV */,
+				7841C9512420D91300890FC3 /* Products */,
+				895888817F238C2DB28EB757 /* Pods */,
+				7E90C58602B2D8DFA911B369 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7841C9512420D91300890FC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7841C9502420D91300890FC3 /* HHYTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7841C9522420D91300890FC3 /* HHYTV */ = {
+			isa = PBXGroup;
+			children = (
+				7841C9672420D97700890FC3 /* Classes */,
+				7841C9532420D91300890FC3 /* AppDelegate.swift */,
+				7841C9552420D91300890FC3 /* SceneDelegate.swift */,
+				7841C9592420D91300890FC3 /* Main.storyboard */,
+				7841C95C2420D91300890FC3 /* Assets.xcassets */,
+				7841C95E2420D91300890FC3 /* LaunchScreen.storyboard */,
+				7841C9612420D91300890FC3 /* Info.plist */,
+				7841C97B2420DFA400890FC3 /* HHYTV-Bridging-Header.h */,
+			);
+			path = HHYTV;
+			sourceTree = "<group>";
+		};
+		7841C9672420D97700890FC3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3E224237E6800C7A1FB /* Resource */,
+				7841C96E2420D97700890FC3 /* Base */,
+				7841C96B2420D97700890FC3 /* Main */,
+				7841C9682420D97700890FC3 /* Home */,
+				78A821FB24249603007AA69D /* Live */,
+				7841C96D2420D97700890FC3 /* Rank */,
+				7841C9692420D97700890FC3 /* Discover */,
+				7841C96A2420D97700890FC3 /* Profile */,
+				7872C33B24237B4B00C7A1FB /* Third */,
+				7872C3DB24237D3200C7A1FB /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7841C9682420D97700890FC3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3D524237D1F00C7A1FB /* Controller */,
+				7872C3D824237D1F00C7A1FB /* Model */,
+				7872C3D924237D1F00C7A1FB /* Other */,
+				7872C3D724237D1F00C7A1FB /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7841C9692420D97700890FC3 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				7841C9772420DA4700890FC3 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		7841C96A2420D97700890FC3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7841C9792420DA4F00890FC3 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7841C96B2420D97700890FC3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				78A822272424BFA5007AA69D /* Protocol */,
+				7872C3D424237CE200C7A1FB /* Common */,
+				7872C3CB24237CDD00C7A1FB /* HHYPageView */,
+				7841CA8924220F6000890FC3 /* Extension */,
+				7841C96C2420D97700890FC3 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7841C96C2420D97700890FC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7841C96F2420D9E500890FC3 /* MainViewController.swift */,
+				7841C9712420DA0300890FC3 /* HHYNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7841C96D2420D97700890FC3 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				7841C9752420DA3F00890FC3 /* RankViewController.swift */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		7841C96E2420D97700890FC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3E624237EBC00C7A1FB /* Controller */,
+				7872C3E524237EBC00C7A1FB /* Model */,
+				7872C3E724237EBC00C7A1FB /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7841CA8924220F6000890FC3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7841CA8A24220F7A00890FC3 /* UIColor-Extension.swift */,
+				7872C3392423704700C7A1FB /* ScreenFrameExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7872C33B24237B4B00C7A1FB /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		7872C3CB24237CDD00C7A1FB /* HHYPageView */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3CC24237CDD00C7A1FB /* HHYContentView.swift */,
+				7872C3CD24237CDD00C7A1FB /* HHYTitleStyle.swift */,
+				7872C3CE24237CDD00C7A1FB /* HHYTitileView.swift */,
+				7872C3CF24237CDD00C7A1FB /* HHYPageView.swift */,
+			);
+			path = HHYPageView;
+			sourceTree = "<group>";
+		};
+		7872C3D424237CE200C7A1FB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3DE24237D6500C7A1FB /* Const.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7872C3D524237D1F00C7A1FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3D624237D1F00C7A1FB /* HomeViewController.swift */,
+				7872C3E024237E3600C7A1FB /* AnchorController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7872C3D724237D1F00C7A1FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7872C4472423881900C7A1FB /* HomeViewCell.swift */,
+				7872C4482423881900C7A1FB /* HomeViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7872C3D824237D1F00C7A1FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3EA24237F1400C7A1FB /* HomeType.swift */,
+				7872C4452423875D00C7A1FB /* AnchorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7872C3D924237D1F00C7A1FB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7872C443242386B400C7A1FB /* HHYWaterFallLayout.swift */,
+				7872C441242386A400C7A1FB /* HomeViewModel.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		7872C3DB24237D3200C7A1FB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				78A821F72424734A007AA69D /* NetworkTools.swift */,
+				78A821F92424735A007AA69D /* KingfisherExtension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7872C3E224237E6800C7A1FB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				78A8222E2424CA12007AA69D /* QHNormalEmotionSort.plist */,
+				78A8222F2424CA12007AA69D /* QHSohuGifSort.plist */,
+				7872C3E324237E6800C7A1FB /* types.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7872C3E524237EBC00C7A1FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7872C3E824237ECB00C7A1FB /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7872C3E624237EBC00C7A1FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7872C3E724237EBC00C7A1FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A821FB24249603007AA69D /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				78A821FC24249603007AA69D /* Controller */,
+				78A821FD24249603007AA69D /* Model */,
+				78A821FE24249603007AA69D /* View */,
+			);
+			name = Live;
+			path = HHYTV/Classes/Live;
+			sourceTree = SOURCE_ROOT;
+		};
+		78A821FC24249603007AA69D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78A821FF24249615007AA69D /* RoomViewController.swift */,
+				78A8220024249615007AA69D /* RoomViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78A821FD24249603007AA69D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78A821FE24249603007AA69D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A822272424BFA5007AA69D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				78A822282424BFAA007AA69D /* Emitterable.swift */,
+				78A8222C2424C5CF007AA69D /* NibLoadable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7E90C58602B2D8DFA911B369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		895888817F238C2DB28EB757 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE25DB60962C84808AC63F4 /* Pods-HHYTV.debug.xcconfig */,
+				0BEAB009690711E2ED328DA1 /* Pods-HHYTV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7841C94F2420D91300890FC3 /* HHYTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7841C9642420D91300890FC3 /* Build configuration list for PBXNativeTarget "HHYTV" */;
+			buildPhases = (
+				8B473717E653A6F1985D0DD9 /* [CP] Check Pods Manifest.lock */,
+				7841C94C2420D91300890FC3 /* Sources */,
+				7841C94D2420D91300890FC3 /* Frameworks */,
+				7841C94E2420D91300890FC3 /* Resources */,
+				E460BC9266DCCF0B67F5BD72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHYTV;
+			productName = HHYTV;
+			productReference = 7841C9502420D91300890FC3 /* HHYTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7841C9482420D91200890FC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = huayoyu;
+				TargetAttributes = {
+					7841C94F2420D91300890FC3 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = 7841C94B2420D91200890FC3 /* Build configuration list for PBXProject "HHYTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7841C9472420D91200890FC3;
+			productRefGroup = 7841C9512420D91300890FC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7841C94F2420D91300890FC3 /* HHYTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7841C94E2420D91300890FC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7841C9602420D91300890FC3 /* LaunchScreen.storyboard in Resources */,
+				78A8220224249615007AA69D /* RoomViewController.xib in Resources */,
+				7841C95D2420D91300890FC3 /* Assets.xcassets in Resources */,
+				78A822312424CA12007AA69D /* QHSohuGifSort.plist in Resources */,
+				7872C44A2423881900C7A1FB /* HomeViewCell.xib in Resources */,
+				7872C3E424237E6800C7A1FB /* types.plist in Resources */,
+				78A822302424CA12007AA69D /* QHNormalEmotionSort.plist in Resources */,
+				7841C95B2420D91300890FC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B473717E653A6F1985D0DD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHYTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E460BC9266DCCF0B67F5BD72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7841C94C2420D91300890FC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7872C444242386B400C7A1FB /* HHYWaterFallLayout.swift in Sources */,
+				7872C3E924237ECB00C7A1FB /* BaseModel.swift in Sources */,
+				7841C9702420D9E500890FC3 /* MainViewController.swift in Sources */,
+				78A8222D2424C5CF007AA69D /* NibLoadable.swift in Sources */,
+				78A821FA2424735A007AA69D /* KingfisherExtension.swift in Sources */,
+				7841C9782420DA4700890FC3 /* DiscoverViewController.swift in Sources */,
+				7872C4492423881900C7A1FB /* HomeViewCell.swift in Sources */,
+				7872C3D224237CDD00C7A1FB /* HHYTitileView.swift in Sources */,
+				7841C9762420DA3F00890FC3 /* RankViewController.swift in Sources */,
+				7872C3D324237CDD00C7A1FB /* HHYPageView.swift in Sources */,
+				7872C3DA24237D1F00C7A1FB /* HomeViewController.swift in Sources */,
+				7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */,
+				78A821F82424734A007AA69D /* NetworkTools.swift in Sources */,
+				7841C9722420DA0300890FC3 /* HHYNavigationController.swift in Sources */,
+				78A8220124249615007AA69D /* RoomViewController.swift in Sources */,
+				7872C3EB24237F1400C7A1FB /* HomeType.swift in Sources */,
+				7872C3E124237E3600C7A1FB /* AnchorController.swift in Sources */,
+				7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */,
+				7872C33A2423704700C7A1FB /* ScreenFrameExtension.swift in Sources */,
+				7841C97A2420DA4F00890FC3 /* ProfileViewController.swift in Sources */,
+				7872C4462423875D00C7A1FB /* AnchorModel.swift in Sources */,
+				7872C3D024237CDD00C7A1FB /* HHYContentView.swift in Sources */,
+				7872C3DF24237D6500C7A1FB /* Const.swift in Sources */,
+				78A822292424BFAA007AA69D /* Emitterable.swift in Sources */,
+				7872C442242386A400C7A1FB /* HomeViewModel.swift in Sources */,
+				7872C3D124237CDD00C7A1FB /* HHYTitleStyle.swift in Sources */,
+				7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7841C9592420D91300890FC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7841C95A2420D91300890FC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7841C95E2420D91300890FC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7841C95F2420D91300890FC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7841C9622420D91300890FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7841C9632420D91300890FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7841C9652420D91300890FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE25DB60962C84808AC63F4 /* Pods-HHYTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDEAR5GZYG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HHYTV/YYKit/Vendor",
+					"$(PROJECT_DIR)/HHYTV/Classes/Third",
+				);
+				INFOPLIST_FILE = HHYTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huayoyu.HHYTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HHYTV/HHYTV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7841C9662420D91300890FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BEAB009690711E2ED328DA1 /* Pods-HHYTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDEAR5GZYG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HHYTV/YYKit/Vendor",
+					"$(PROJECT_DIR)/HHYTV/Classes/Third",
+				);
+				INFOPLIST_FILE = HHYTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huayoyu.HHYTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HHYTV/HHYTV-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7841C94B2420D91200890FC3 /* Build configuration list for PBXProject "HHYTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7841C9622420D91300890FC3 /* Debug */,
+				7841C9632420D91300890FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7841C9642420D91300890FC3 /* Build configuration list for PBXNativeTarget "HHYTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7841C9652420D91300890FC3 /* Debug */,
+				7841C9662420D91300890FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7841C9482420D91200890FC3 /* Project object */;
+}

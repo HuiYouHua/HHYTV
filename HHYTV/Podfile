@@ -1,0 +1,14 @@
+
+platform :ios, '9.0'
+use_frameworks!
+
+target 'HHYTV' do
+
+pod 'Moya'
+pod 'Moya/RxSwift'
+pod 'Kingfisher'
+pod 'SnapKit'
+pod 'HandyJSON'
+pod 'SwiftyJSON'
+
+end
