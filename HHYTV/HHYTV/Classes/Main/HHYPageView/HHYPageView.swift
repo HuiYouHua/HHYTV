@@ -16,6 +16,7 @@ class HHYPageView: UIView {
     fileprivate var style: HHYTitleStyle
     
     fileprivate var titleView: HHYTitileView!
+    fileprivate var contentView: HHYContentView!
     
     init(frame: CGRect, titles: [String], childVcs: [UIViewController], parentVc: UIViewController, style: HHYTitleStyle) {
         // 两段式初始化
@@ -46,20 +47,38 @@ extension HHYPageView {
     fileprivate func setupTitleView() {
         let titleFrame = CGRect(x: 0, y: 0, width: bounds.width, height: style.titleHeight)
         titleView = HHYTitileView(frame: titleFrame, titles: titles, style: style)
+        titleView.delegate = self
         addSubview(titleView)
     }
     
     fileprivate func setupContentView() {
         let contentFrame = CGRect(x: 0, y: style.titleHeight, width: bounds.width, height: bounds.height - style.titleHeight)
-        let contentView = HHYContentView(frame: contentFrame, childVcs: childVcs, parentVc: parentVc)
+        contentView = HHYContentView(frame: contentFrame, childVcs: childVcs, parentVc: parentVc)
+        contentView.delegate = self
         addSubview(contentView)
         
-        // 让contentView和titleView相互成为代理
-        titleView.delegate = contentView
-        contentView.delegate = titleView
     }
 }
 
+// MARK: - HHYTitileViewDelegate
+extension HHYPageView: HHYTitileViewDelegate {
+    func titleView(_ titleView: HHYTitileView, targetIndex: Int) {
+        contentView.setCurrentIndex(targetIndex)
+    }
+}
+
+// MARK: - HHYContentViewDelegate
+extension HHYPageView: HHYContentViewDelegate {
+    func contentView(_ contentView: HHYContentView, targetIndex: Int) {
+        titleView.adjustTitlteLabel(targetIndex: targetIndex)
+    }
+    
+    func contentView(_ contentView: HHYContentView, targetIndex: Int, sourceIndex: Int, progress: CGFloat) {
+        titleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+    
+    
+}
 
 
 

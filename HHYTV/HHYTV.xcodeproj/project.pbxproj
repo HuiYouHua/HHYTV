@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3502DBFF2427E5B50059306B /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DBFE2427E5B50059306B /* EmoticonView.swift */; };
+		3502DC072427E60E0059306B /* HHYPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DC012427E60E0059306B /* HHYPageCollectionView.swift */; };
+		3502DC082427E60E0059306B /* HHYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DC022427E60E0059306B /* HHYContentView.swift */; };
+		3502DC092427E60E0059306B /* HHYPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DC032427E60E0059306B /* HHYPageCollectionViewLayout.swift */; };
+		3502DC0A2427E60E0059306B /* HHYTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DC042427E60E0059306B /* HHYTitleStyle.swift */; };
+		3502DC0B2427E60E0059306B /* HHYTitileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DC052427E60E0059306B /* HHYTitileView.swift */; };
+		3502DC0C2427E60E0059306B /* HHYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502DC062427E60E0059306B /* HHYPageView.swift */; };
+		35051F9124276FB10082DA41 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051F8D24276FB10082DA41 /* ChatToolsView.swift */; };
+		35051F9224276FB10082DA41 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */; };
+		35051F9324276FB10082DA41 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */; };
+		35051F9424276FB10082DA41 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35051F9024276FB10082DA41 /* ChatToolsView.xib */; };
 		7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9532420D91300890FC3 /* AppDelegate.swift */; };
 		7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9552420D91300890FC3 /* SceneDelegate.swift */; };
 		7841C95B2420D91300890FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7841C9592420D91300890FC3 /* Main.storyboard */; };
@@ -19,10 +30,6 @@
 		7841C97A2420DA4F00890FC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9792420DA4F00890FC3 /* ProfileViewController.swift */; };
 		7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841CA8A24220F7A00890FC3 /* UIColor-Extension.swift */; };
 		7872C33A2423704700C7A1FB /* ScreenFrameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3392423704700C7A1FB /* ScreenFrameExtension.swift */; };
-		7872C3D024237CDD00C7A1FB /* HHYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CC24237CDD00C7A1FB /* HHYContentView.swift */; };
-		7872C3D124237CDD00C7A1FB /* HHYTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CD24237CDD00C7A1FB /* HHYTitleStyle.swift */; };
-		7872C3D224237CDD00C7A1FB /* HHYTitileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CE24237CDD00C7A1FB /* HHYTitileView.swift */; };
-		7872C3D324237CDD00C7A1FB /* HHYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3CF24237CDD00C7A1FB /* HHYPageView.swift */; };
 		7872C3DA24237D1F00C7A1FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3D624237D1F00C7A1FB /* HomeViewController.swift */; };
 		7872C3DF24237D6500C7A1FB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3DE24237D6500C7A1FB /* Const.swift */; };
 		7872C3E124237E3600C7A1FB /* AnchorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872C3E024237E3600C7A1FB /* AnchorController.swift */; };
@@ -47,6 +54,17 @@
 
 /* Begin PBXFileReference section */
 		0BEAB009690711E2ED328DA1 /* Pods-HHYTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHYTV.release.xcconfig"; path = "Target Support Files/Pods-HHYTV/Pods-HHYTV.release.xcconfig"; sourceTree = "<group>"; };
+		3502DBFE2427E5B50059306B /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		3502DC012427E60E0059306B /* HHYPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYPageCollectionView.swift; sourceTree = "<group>"; };
+		3502DC022427E60E0059306B /* HHYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYContentView.swift; sourceTree = "<group>"; };
+		3502DC032427E60E0059306B /* HHYPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		3502DC042427E60E0059306B /* HHYTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYTitleStyle.swift; sourceTree = "<group>"; };
+		3502DC052427E60E0059306B /* HHYTitileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYTitileView.swift; sourceTree = "<group>"; };
+		3502DC062427E60E0059306B /* HHYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYPageView.swift; sourceTree = "<group>"; };
+		35051F8D24276FB10082DA41 /* ChatToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
+		35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
+		35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		35051F9024276FB10082DA41 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
 		4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9502420D91300890FC3 /* HHYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9532420D91300890FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,10 +81,6 @@
 		7841C97B2420DFA400890FC3 /* HHYTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHYTV-Bridging-Header.h"; sourceTree = "<group>"; };
 		7841CA8A24220F7A00890FC3 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		7872C3392423704700C7A1FB /* ScreenFrameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenFrameExtension.swift; sourceTree = "<group>"; };
-		7872C3CC24237CDD00C7A1FB /* HHYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYContentView.swift; sourceTree = "<group>"; };
-		7872C3CD24237CDD00C7A1FB /* HHYTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYTitleStyle.swift; sourceTree = "<group>"; };
-		7872C3CE24237CDD00C7A1FB /* HHYTitileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYTitileView.swift; sourceTree = "<group>"; };
-		7872C3CF24237CDD00C7A1FB /* HHYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYPageView.swift; sourceTree = "<group>"; };
 		7872C3D624237D1F00C7A1FB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7872C3DE24237D6500C7A1FB /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		7872C3E024237E3600C7A1FB /* AnchorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorController.swift; sourceTree = "<group>"; };
@@ -101,6 +115,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3502DC002427E60E0059306B /* HHYPageView */ = {
+			isa = PBXGroup;
+			children = (
+				3502DC012427E60E0059306B /* HHYPageCollectionView.swift */,
+				3502DC022427E60E0059306B /* HHYContentView.swift */,
+				3502DC032427E60E0059306B /* HHYPageCollectionViewLayout.swift */,
+				3502DC042427E60E0059306B /* HHYTitleStyle.swift */,
+				3502DC052427E60E0059306B /* HHYTitileView.swift */,
+				3502DC062427E60E0059306B /* HHYPageView.swift */,
+			);
+			path = HHYPageView;
+			sourceTree = "<group>";
+		};
+		35051F8C24276FB10082DA41 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				35051F8D24276FB10082DA41 /* ChatToolsView.swift */,
+				35051F9024276FB10082DA41 /* ChatToolsView.xib */,
+				3502DBFE2427E5B50059306B /* EmoticonView.swift */,
+				35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */,
+				35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
 		7841C9472420D91200890FC3 = {
 			isa = PBXGroup;
 			children = (
@@ -181,9 +220,9 @@
 		7841C96B2420D97700890FC3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3502DC002427E60E0059306B /* HHYPageView */,
 				78A822272424BFA5007AA69D /* Protocol */,
 				7872C3D424237CE200C7A1FB /* Common */,
-				7872C3CB24237CDD00C7A1FB /* HHYPageView */,
 				7841CA8924220F6000890FC3 /* Extension */,
 				7841C96C2420D97700890FC3 /* Controller */,
 			);
@@ -231,17 +270,6 @@
 			children = (
 			);
 			path = Third;
-			sourceTree = "<group>";
-		};
-		7872C3CB24237CDD00C7A1FB /* HHYPageView */ = {
-			isa = PBXGroup;
-			children = (
-				7872C3CC24237CDD00C7A1FB /* HHYContentView.swift */,
-				7872C3CD24237CDD00C7A1FB /* HHYTitleStyle.swift */,
-				7872C3CE24237CDD00C7A1FB /* HHYTitileView.swift */,
-				7872C3CF24237CDD00C7A1FB /* HHYPageView.swift */,
-			);
-			path = HHYPageView;
 			sourceTree = "<group>";
 		};
 		7872C3D424237CE200C7A1FB /* Common */ = {
@@ -359,6 +387,7 @@
 		78A821FE24249603007AA69D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35051F8C24276FB10082DA41 /* ChatView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,9 +481,11 @@
 			files = (
 				7841C9602420D91300890FC3 /* LaunchScreen.storyboard in Resources */,
 				78A8220224249615007AA69D /* RoomViewController.xib in Resources */,
+				35051F9224276FB10082DA41 /* EmoticonViewCell.xib in Resources */,
 				7841C95D2420D91300890FC3 /* Assets.xcassets in Resources */,
 				78A822312424CA12007AA69D /* QHSohuGifSort.plist in Resources */,
 				7872C44A2423881900C7A1FB /* HomeViewCell.xib in Resources */,
+				35051F9424276FB10082DA41 /* ChatToolsView.xib in Resources */,
 				7872C3E424237E6800C7A1FB /* types.plist in Resources */,
 				78A822302424CA12007AA69D /* QHNormalEmotionSort.plist in Resources */,
 				7841C95B2420D91300890FC3 /* Main.storyboard in Resources */,
@@ -512,30 +543,35 @@
 			files = (
 				7872C444242386B400C7A1FB /* HHYWaterFallLayout.swift in Sources */,
 				7872C3E924237ECB00C7A1FB /* BaseModel.swift in Sources */,
+				35051F9324276FB10082DA41 /* EmoticonViewCell.swift in Sources */,
 				7841C9702420D9E500890FC3 /* MainViewController.swift in Sources */,
 				78A8222D2424C5CF007AA69D /* NibLoadable.swift in Sources */,
 				78A821FA2424735A007AA69D /* KingfisherExtension.swift in Sources */,
+				3502DC082427E60E0059306B /* HHYContentView.swift in Sources */,
 				7841C9782420DA4700890FC3 /* DiscoverViewController.swift in Sources */,
 				7872C4492423881900C7A1FB /* HomeViewCell.swift in Sources */,
-				7872C3D224237CDD00C7A1FB /* HHYTitileView.swift in Sources */,
 				7841C9762420DA3F00890FC3 /* RankViewController.swift in Sources */,
-				7872C3D324237CDD00C7A1FB /* HHYPageView.swift in Sources */,
 				7872C3DA24237D1F00C7A1FB /* HomeViewController.swift in Sources */,
+				3502DC072427E60E0059306B /* HHYPageCollectionView.swift in Sources */,
 				7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */,
+				3502DC0C2427E60E0059306B /* HHYPageView.swift in Sources */,
 				78A821F82424734A007AA69D /* NetworkTools.swift in Sources */,
 				7841C9722420DA0300890FC3 /* HHYNavigationController.swift in Sources */,
 				78A8220124249615007AA69D /* RoomViewController.swift in Sources */,
 				7872C3EB24237F1400C7A1FB /* HomeType.swift in Sources */,
 				7872C3E124237E3600C7A1FB /* AnchorController.swift in Sources */,
 				7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */,
+				3502DC0B2427E60E0059306B /* HHYTitileView.swift in Sources */,
 				7872C33A2423704700C7A1FB /* ScreenFrameExtension.swift in Sources */,
 				7841C97A2420DA4F00890FC3 /* ProfileViewController.swift in Sources */,
+				3502DC092427E60E0059306B /* HHYPageCollectionViewLayout.swift in Sources */,
+				3502DC0A2427E60E0059306B /* HHYTitleStyle.swift in Sources */,
 				7872C4462423875D00C7A1FB /* AnchorModel.swift in Sources */,
-				7872C3D024237CDD00C7A1FB /* HHYContentView.swift in Sources */,
+				35051F9124276FB10082DA41 /* ChatToolsView.swift in Sources */,
 				7872C3DF24237D6500C7A1FB /* Const.swift in Sources */,
 				78A822292424BFAA007AA69D /* Emitterable.swift in Sources */,
 				7872C442242386A400C7A1FB /* HomeViewModel.swift in Sources */,
-				7872C3D124237CDD00C7A1FB /* HHYTitleStyle.swift in Sources */,
+				3502DBFF2427E5B50059306B /* EmoticonView.swift in Sources */,
 				7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

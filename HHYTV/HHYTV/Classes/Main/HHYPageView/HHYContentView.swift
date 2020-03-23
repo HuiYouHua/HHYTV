@@ -187,15 +187,19 @@ extension HHYContentView: UICollectionViewDelegate {
     }
 }
 
-// MARK: - HHYTitileViewDelegate
-extension HHYContentView: HHYTitileViewDelegate {
-    func titleView(_ titleView: HHYTitileView, targetIndex: Int) {
+// MARK:- 对外暴露的方法
+extension HHYContentView {
+    func setCurrentIndex(_ currentIndex : Int) {
+        
+        // 1.记录需要进制执行代理方法
         isForbidScroll = true
         
-        let indexPath = IndexPath(item: targetIndex, section: 0)
-        collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
+        // 2.滚动正确的位置
+        let offsetX = CGFloat(currentIndex) * collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
     }
 }
+
 
 
 
