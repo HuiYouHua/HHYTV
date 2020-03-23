@@ -54,6 +54,7 @@ extension RoomViewController {
     fileprivate func setupBottomView() {
         chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kChatToosViewHeight)
         chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        chatToolsView.delegate = self
         view.addSubview(chatToolsView)
     }
 }
@@ -100,5 +101,12 @@ extension RoomViewController {
             let endY = inputViewY == (kScreenH - kChatToosViewHeight) ? kScreenH : inputViewY
             self.chatToolsView.frame.origin.y = endY
         }, completion: nil)
+    }
+}
+
+// MARK: - 监听用户输入的内容
+extension RoomViewController: ChatToolsViewDelegate {
+    func chatToolsView(toolView: ChatToolsView, message: String) {
+        print(message)
     }
 }

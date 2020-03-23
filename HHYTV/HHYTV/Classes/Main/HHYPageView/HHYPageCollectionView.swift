@@ -14,9 +14,14 @@ protocol HHYPageCollectionViewDataSource: class {
     func pageCollection(_ pageCollection: HHYPageCollectionView, _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
 }
 
+protocol HHYPageCollectionViewDelegate: class {
+    func pageCollectionView(_ pageCollection: HHYPageCollectionView, didSelectItemAt indexPath: IndexPath)
+}
+
 class HHYPageCollectionView: UIView {
 
     weak var dataSource: HHYPageCollectionViewDataSource?
+    weak var delegate: HHYPageCollectionViewDelegate?
     
     fileprivate var titles: [String]
     fileprivate var style: HHYTitleStyle
@@ -50,7 +55,6 @@ extension HHYPageCollectionView {
         let titleY = isTitleTop ? 0 : bounds.height - style.titleHeight
         let titleFrame = CGRect(x: 0, y: titleY, width: bounds.width, height: style.titleHeight)
         titleView = HHYTitileView(frame: titleFrame, titles: titles, style: style)
-        titleView.backgroundColor = UIColor.white
         titleView.delegate = self
         addSubview(titleView)
         
@@ -61,7 +65,6 @@ extension HHYPageCollectionView {
         pageControl = UIPageControl(frame: pageControlFrame)
         addSubview(pageControl)
         pageControl.isEnabled = false
-        pageControl.backgroundColor = UIColor.randomColor()
         
         // 3.创建UICollectionView
         let collectionViewY = isTitleTop ? style.titleHeight : 0
@@ -72,7 +75,7 @@ extension HHYPageCollectionView {
         collectionView.dataSource = self
         collectionView.delegate = self
         addSubview(collectionView)
-        collectionView.backgroundColor = UIColor.white
+        pageControl.backgroundColor = collectionView.backgroundColor
     }
 }
 
@@ -108,6 +111,11 @@ extension HHYPageCollectionView: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 extension HHYPageCollectionView: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.pageCollectionView(self, didSelectItemAt: indexPath)
+    }
+    
     // 手离开屏幕自动减速结束后的回调
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         scrollViewEndScroll()

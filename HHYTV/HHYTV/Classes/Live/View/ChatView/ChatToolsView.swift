@@ -58,6 +58,19 @@ extension ChatToolsView {
         inputTextField.rightViewMode = .always
         inputTextField.allowsEditingTextAttributes = true
         
+        // 2.设置emoticonView的闭包
+        emoticonView.emoticonClickCallback = {[weak self]
+            emoticon in
+            // 1.判断是否删除按钮
+            if emoticon.emoticonName == "delete-n" {
+                self?.inputTextField.deleteBackward()
+                return
+            }
+            
+            // 2.获取光标的位置
+            guard let range = self?.inputTextField.selectedTextRange else { return }
+            self?.inputTextField.replace(range, withText: emoticon.emoticonName)
+        }
     }
 }
 
@@ -66,9 +79,13 @@ extension ChatToolsView {
         btn.isSelected = !btn.isSelected
         
         // 切换键盘
+        // 记录切换键盘前光标位置
+        let range = inputTextField.selectedTextRange
+        
         inputTextField.resignFirstResponder()
         inputView?.inputView?.backgroundColor = .white
         inputTextField.inputView = inputTextField.inputView == nil ? emoticonView : nil;
         inputTextField.becomeFirstResponder()
+        inputTextField.selectedTextRange = range
     }
 }

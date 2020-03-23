@@ -8,9 +8,11 @@
 
 import UIKit
 
-private let kEmoticonViewCellId = "kEmoticonViewCellId"
+private let kEmoticonViewCellId = "EmoticonViewCell"
 
 class EmoticonView: UIView {
+    
+    var emoticonClickCallback: ((Emoticon) -> Void)?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,32 +38,37 @@ extension EmoticonView {
         
         // 2.添加pageCollectionView视图
         addSubview(pageCollectionView)
-        
+
         // 3.设置pageCollectionView的属性
         pageCollectionView.dataSource = self
-        pageCollectionView.register(UICollectionViewCell.self, kEmoticonViewCellId)
+        pageCollectionView.delegate = self
+        pageCollectionView.register(UINib(nibName: "EmoticonViewCell", bundle: nil), kEmoticonViewCellId)
     }
 }
 
 // MARK: - HHYPageCollectionViewDataSource
 extension EmoticonView: HHYPageCollectionViewDataSource {
     func numberOfSections(in pageCollection: HHYPageCollectionView) -> Int {
-        return 2
+        return EmoticonViewModel.shareInstance.packages.count
     }
     
     func pageCollection(_ pageCollection: HHYPageCollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 30
-        } else {
-            return 10
-        }
+        return EmoticonViewModel.shareInstance.packages[section].emoticons.count
     }
     
     func pageCollection(_ pageCollection: HHYPageCollectionView, _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kEmoticonViewCellId, for: indexPath)
-        cell.backgroundColor = .randomColor()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kEmoticonViewCellId, for: indexPath) as! EmoticonViewCell
+        let emoticon =  EmoticonViewModel.shareInstance.packages[indexPath.section].emoticons[indexPath.item]
+        cell.emoticon = emoticon
         return cell
     }
-    
-    
+}
+
+extension EmoticonView: HHYPageCollectionViewDelegate {
+    func pageCollectionView(_ pageCollection: HHYPageCollectionView, didSelectItemAt indexPath: IndexPath) {
+        let emoticon =  EmoticonViewModel.shareInstance.packages[indexPath.section].emoticons[indexPath.item]
+        if let emoticonClickCallback = emoticonClickCallback {
+            emoticonClickCallback(emoticon)
+        }
+    }
 }

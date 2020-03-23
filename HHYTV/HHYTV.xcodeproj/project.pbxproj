@@ -18,6 +18,9 @@
 		35051F9224276FB10082DA41 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */; };
 		35051F9324276FB10082DA41 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */; };
 		35051F9424276FB10082DA41 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35051F9024276FB10082DA41 /* ChatToolsView.xib */; };
+		350E5FCA24288A7300D32F5A /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FC924288A7300D32F5A /* Emoticon.swift */; };
+		350E5FCC24288AB600D32F5A /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */; };
+		350E5FCF24288BBE00D32F5A /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */; };
 		7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9532420D91300890FC3 /* AppDelegate.swift */; };
 		7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9552420D91300890FC3 /* SceneDelegate.swift */; };
 		7841C95B2420D91300890FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7841C9592420D91300890FC3 /* Main.storyboard */; };
@@ -65,6 +68,9 @@
 		35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
 		35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
 		35051F9024276FB10082DA41 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		350E5FC924288A7300D32F5A /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9502420D91300890FC3 /* HHYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9532420D91300890FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +144,14 @@
 				35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */,
 			);
 			path = ChatView;
+			sourceTree = "<group>";
+		};
+		350E5FCD24288BAD00D32F5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7841C9472420D91200890FC3 = {
@@ -363,6 +377,7 @@
 				78A821FC24249603007AA69D /* Controller */,
 				78A821FD24249603007AA69D /* Model */,
 				78A821FE24249603007AA69D /* View */,
+				350E5FCD24288BAD00D32F5A /* ViewModel */,
 			);
 			name = Live;
 			path = HHYTV/Classes/Live;
@@ -380,6 +395,8 @@
 		78A821FD24249603007AA69D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				350E5FC924288A7300D32F5A /* Emoticon.swift */,
+				350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -569,9 +586,12 @@
 				7872C4462423875D00C7A1FB /* AnchorModel.swift in Sources */,
 				35051F9124276FB10082DA41 /* ChatToolsView.swift in Sources */,
 				7872C3DF24237D6500C7A1FB /* Const.swift in Sources */,
+				350E5FCA24288A7300D32F5A /* Emoticon.swift in Sources */,
 				78A822292424BFAA007AA69D /* Emitterable.swift in Sources */,
+				350E5FCF24288BBE00D32F5A /* EmoticonViewModel.swift in Sources */,
 				7872C442242386A400C7A1FB /* HomeViewModel.swift in Sources */,
 				3502DBFF2427E5B50059306B /* EmoticonView.swift in Sources */,
+				350E5FCC24288AB600D32F5A /* EmoticonPackage.swift in Sources */,
 				7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
