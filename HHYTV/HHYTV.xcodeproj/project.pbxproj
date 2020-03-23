@@ -21,6 +21,13 @@
 		350E5FCA24288A7300D32F5A /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FC924288A7300D32F5A /* Emoticon.swift */; };
 		350E5FCC24288AB600D32F5A /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */; };
 		350E5FCF24288BBE00D32F5A /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */; };
+		350E5FD524289CCF00D32F5A /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350E5FD124289CCF00D32F5A /* GiftListView.xib */; };
+		350E5FD624289CCF00D32F5A /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FD224289CCF00D32F5A /* GiftListView.swift */; };
+		350E5FD724289CCF00D32F5A /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FD324289CCF00D32F5A /* GiftViewCell.swift */; };
+		350E5FD824289CCF00D32F5A /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350E5FD424289CCF00D32F5A /* GiftViewCell.xib */; };
+		350E5FDA24289EE500D32F5A /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FD924289EE500D32F5A /* GiftViewModel.swift */; };
+		350E5FDD24289EF000D32F5A /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FDB24289EF000D32F5A /* GiftPackage.swift */; };
+		350E5FDE24289EF000D32F5A /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FDC24289EF000D32F5A /* GiftModel.swift */; };
 		7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9532420D91300890FC3 /* AppDelegate.swift */; };
 		7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9552420D91300890FC3 /* SceneDelegate.swift */; };
 		7841C95B2420D91300890FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7841C9592420D91300890FC3 /* Main.storyboard */; };
@@ -71,6 +78,13 @@
 		350E5FC924288A7300D32F5A /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
 		350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		350E5FD124289CCF00D32F5A /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		350E5FD224289CCF00D32F5A /* GiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		350E5FD324289CCF00D32F5A /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		350E5FD424289CCF00D32F5A /* GiftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		350E5FD924289EE500D32F5A /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		350E5FDB24289EF000D32F5A /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		350E5FDC24289EF000D32F5A /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
 		4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9502420D91300890FC3 /* HHYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9532420D91300890FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,9 +163,21 @@
 		350E5FCD24288BAD00D32F5A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				350E5FD924289EE500D32F5A /* GiftViewModel.swift */,
 				350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		350E5FD024289C8100D32F5A /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				350E5FD224289CCF00D32F5A /* GiftListView.swift */,
+				350E5FD124289CCF00D32F5A /* GiftListView.xib */,
+				350E5FD324289CCF00D32F5A /* GiftViewCell.swift */,
+				350E5FD424289CCF00D32F5A /* GiftViewCell.xib */,
+			);
+			path = GiftView;
 			sourceTree = "<group>";
 		};
 		7841C9472420D91200890FC3 = {
@@ -397,6 +423,8 @@
 			children = (
 				350E5FC924288A7300D32F5A /* Emoticon.swift */,
 				350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */,
+				350E5FDC24289EF000D32F5A /* GiftModel.swift */,
+				350E5FDB24289EF000D32F5A /* GiftPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,6 +432,7 @@
 		78A821FE24249603007AA69D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				350E5FD024289C8100D32F5A /* GiftView */,
 				35051F8C24276FB10082DA41 /* ChatView */,
 			);
 			path = View;
@@ -498,11 +527,13 @@
 			files = (
 				7841C9602420D91300890FC3 /* LaunchScreen.storyboard in Resources */,
 				78A8220224249615007AA69D /* RoomViewController.xib in Resources */,
+				350E5FD824289CCF00D32F5A /* GiftViewCell.xib in Resources */,
 				35051F9224276FB10082DA41 /* EmoticonViewCell.xib in Resources */,
 				7841C95D2420D91300890FC3 /* Assets.xcassets in Resources */,
 				78A822312424CA12007AA69D /* QHSohuGifSort.plist in Resources */,
 				7872C44A2423881900C7A1FB /* HomeViewCell.xib in Resources */,
 				35051F9424276FB10082DA41 /* ChatToolsView.xib in Resources */,
+				350E5FD524289CCF00D32F5A /* GiftListView.xib in Resources */,
 				7872C3E424237E6800C7A1FB /* types.plist in Resources */,
 				78A822302424CA12007AA69D /* QHNormalEmotionSort.plist in Resources */,
 				7841C95B2420D91300890FC3 /* Main.storyboard in Resources */,
@@ -560,15 +591,18 @@
 			files = (
 				7872C444242386B400C7A1FB /* HHYWaterFallLayout.swift in Sources */,
 				7872C3E924237ECB00C7A1FB /* BaseModel.swift in Sources */,
+				350E5FDA24289EE500D32F5A /* GiftViewModel.swift in Sources */,
 				35051F9324276FB10082DA41 /* EmoticonViewCell.swift in Sources */,
 				7841C9702420D9E500890FC3 /* MainViewController.swift in Sources */,
 				78A8222D2424C5CF007AA69D /* NibLoadable.swift in Sources */,
 				78A821FA2424735A007AA69D /* KingfisherExtension.swift in Sources */,
 				3502DC082427E60E0059306B /* HHYContentView.swift in Sources */,
+				350E5FD724289CCF00D32F5A /* GiftViewCell.swift in Sources */,
 				7841C9782420DA4700890FC3 /* DiscoverViewController.swift in Sources */,
 				7872C4492423881900C7A1FB /* HomeViewCell.swift in Sources */,
 				7841C9762420DA3F00890FC3 /* RankViewController.swift in Sources */,
 				7872C3DA24237D1F00C7A1FB /* HomeViewController.swift in Sources */,
+				350E5FDE24289EF000D32F5A /* GiftModel.swift in Sources */,
 				3502DC072427E60E0059306B /* HHYPageCollectionView.swift in Sources */,
 				7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */,
 				3502DC0C2427E60E0059306B /* HHYPageView.swift in Sources */,
@@ -580,6 +614,7 @@
 				7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */,
 				3502DC0B2427E60E0059306B /* HHYTitileView.swift in Sources */,
 				7872C33A2423704700C7A1FB /* ScreenFrameExtension.swift in Sources */,
+				350E5FD624289CCF00D32F5A /* GiftListView.swift in Sources */,
 				7841C97A2420DA4F00890FC3 /* ProfileViewController.swift in Sources */,
 				3502DC092427E60E0059306B /* HHYPageCollectionViewLayout.swift in Sources */,
 				3502DC0A2427E60E0059306B /* HHYTitleStyle.swift in Sources */,
@@ -588,6 +623,7 @@
 				7872C3DF24237D6500C7A1FB /* Const.swift in Sources */,
 				350E5FCA24288A7300D32F5A /* Emoticon.swift in Sources */,
 				78A822292424BFAA007AA69D /* Emitterable.swift in Sources */,
+				350E5FDD24289EF000D32F5A /* GiftPackage.swift in Sources */,
 				350E5FCF24288BBE00D32F5A /* EmoticonViewModel.swift in Sources */,
 				7872C442242386A400C7A1FB /* HomeViewModel.swift in Sources */,
 				3502DBFF2427E5B50059306B /* EmoticonView.swift in Sources */,

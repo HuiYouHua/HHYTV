@@ -9,6 +9,7 @@
 import UIKit
 
 private let kChatToosViewHeight: CGFloat = 44
+private let kGiftlistViewHeight : CGFloat = 370
 
 class RoomViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class RoomViewController: UIViewController {
     @IBOutlet weak var bottomView: UIStackView!
     
     fileprivate lazy var chatToolsView: ChatToolsView = ChatToolsView.loadFromNib()
+    fileprivate lazy var giftListView: GiftListView = GiftListView.loadFromNib()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,10 +54,17 @@ extension RoomViewController {
     }
     
     fileprivate func setupBottomView() {
+        // 1.设置chatToolsView
         chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kChatToosViewHeight)
         chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
         chatToolsView.delegate = self
         view.addSubview(chatToolsView)
+        
+        // 2.设置GiftListView
+        giftListView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kGiftlistViewHeight)
+        giftListView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        view.addSubview(giftListView)
+        giftListView.delegate = self
     }
 }
 
@@ -76,7 +85,9 @@ extension RoomViewController: Emitter {
         case 1:
             print("点击了分享")
         case 2:
-            print("点击了礼物")
+            UIView.animate(withDuration: 0.25, animations: {
+                self.giftListView.frame.origin.y = kScreenH - kGiftlistViewHeight
+            })
         case 3:
             print("点击了更多")
         case 4:
@@ -105,8 +116,12 @@ extension RoomViewController {
 }
 
 // MARK: - 监听用户输入的内容
-extension RoomViewController: ChatToolsViewDelegate {
+extension RoomViewController: ChatToolsViewDelegate, GiftListViewDelegate {
     func chatToolsView(toolView: ChatToolsView, message: String) {
         print(message)
+    }
+    
+    func giftListView(giftView: GiftListView, giftModel: GiftModel) {
+        print(giftModel.subject)
     }
 }

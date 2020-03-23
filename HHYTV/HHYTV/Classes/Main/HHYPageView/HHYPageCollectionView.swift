@@ -88,6 +88,10 @@ extension HHYPageCollectionView {
     func register(_ nib: UINib, _ identifier: String) {
         collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
+    
+    func reloadData() {
+        collectionView.reloadData()
+    }
 }
 
 // MARK: - UICollectionViewDataSource

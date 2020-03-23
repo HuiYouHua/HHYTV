@@ -1,9 +1,9 @@
 //
 //  AnchorModel.swift
-//  XMGTV
+//  HHYTV
 //
-//  Created by apple on 16/11/9.
-//  Copyright © 2016年 coderwhy. All rights reserved.
+//  Created by 华惠友 on 2020/3/23.
+//  Copyright © 2020 huayoyu. All rights reserved.
 //
 
 import UIKit
