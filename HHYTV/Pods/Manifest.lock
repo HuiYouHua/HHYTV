@@ -1,49 +1,37 @@
 PODS:
-  - Alamofire (4.9.1)
-  - HandyJSON (5.0.1)
+  - Alamofire (4.8.1)
+  - HandyJSON (5.0.0-beta.1)
   - Kingfisher (4.10.1)
-  - Moya (13.0.1):
-    - Moya/Core (= 13.0.1)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
-    - Moya/Core
-    - RxSwift (~> 4.0)
-  - Result (4.1.0)
-  - RxSwift (4.5.0)
-  - SnapKit (4.2.0)
-  - SwiftyJSON (5.0.0)
+  - ProtocolBuffers-Swift (4.0.6)
 
 DEPENDENCIES:
-  - HandyJSON
+  - Alamofire
+  - HandyJSON (from `https://github.com/alibaba/HandyJSON.git`, branch `dev_for_swift5.0`)
   - Kingfisher
-  - Moya
-  - Moya/RxSwift
-  - SnapKit
-  - SwiftyJSON
+  - ProtocolBuffers-Swift
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
-    - HandyJSON
     - Kingfisher
-    - Moya
-    - Result
-    - RxSwift
-    - SnapKit
-    - SwiftyJSON
+    - ProtocolBuffers-Swift
+
+EXTERNAL SOURCES:
+  HandyJSON:
+    :branch: dev_for_swift5.0
+    :git: https://github.com/alibaba/HandyJSON.git
+
+CHECKOUT OPTIONS:
+  HandyJSON:
+    :commit: a2ba4e537711ae1fcd9183679c4db878eb171a78
+    :git: https://github.com/alibaba/HandyJSON.git
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  ProtocolBuffers-Swift: 09b5cfcc641ab512d6aaa1d2cc3879a40432052c
 
-PODFILE CHECKSUM: 6175cab5b769d9f8be8681e8b309dc62fb47e1d0
+PODFILE CHECKSUM: 1e4e67791dab50a767c14b365433b494b41a2cd9
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.6.0

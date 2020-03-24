@@ -94,8 +94,8 @@ extension GiftListView : HHYPageCollectionViewDataSource, HHYPageCollectionViewD
     }
     
     func pageCollectionView(_ pageCollection: HHYPageCollectionView, didSelectItemAt indexPath: IndexPath) {
-        let giftModel = giftVM.giftlistData[indexPath.section].list[indexPath.item]
-        print(giftModel)
+        sendGiftBtn.isEnabled = true
+        currentIndexPath = indexPath
     }
     
 

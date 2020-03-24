@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,18 @@
 		350E5FDA24289EE500D32F5A /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FD924289EE500D32F5A /* GiftViewModel.swift */; };
 		350E5FDD24289EF000D32F5A /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FDB24289EF000D32F5A /* GiftPackage.swift */; };
 		350E5FDE24289EF000D32F5A /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FDC24289EF000D32F5A /* GiftModel.swift */; };
+		35A55449242A492F00EEB9A9 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 35A55443242A492F00EEB9A9 /* yudpsocket.c */; };
+		35A5544A242A492F00EEB9A9 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55444242A492F00EEB9A9 /* yudpsocket.swift */; };
+		35A5544B242A492F00EEB9A9 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 35A55445242A492F00EEB9A9 /* ytcpsocket.c */; };
+		35A5544C242A492F00EEB9A9 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55446242A492F00EEB9A9 /* ysocket.swift */; };
+		35A5544D242A492F00EEB9A9 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55447242A492F00EEB9A9 /* ytcpsocket.swift */; };
+		35A5544E242A492F00EEB9A9 /* HHYSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55448242A492F00EEB9A9 /* HHYSocket.swift */; };
+		35A55451242A49E500EEB9A9 /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5544F242A49E500EEB9A9 /* Immessage.proto.swift */; };
+		35A55452242A49E500EEB9A9 /* IMMessage.proto in Sources */ = {isa = PBXBuildFile; fileRef = 35A55450242A49E500EEB9A9 /* IMMessage.proto */; };
+		35A55455242A4E1200EEB9A9 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55454242A4E1200EEB9A9 /* ChatContentView.swift */; };
+		35A55457242A4E2000EEB9A9 /* ChatContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A55456242A4E2000EEB9A9 /* ChatContentView.xib */; };
+		35A5545A242A53E500EEB9A9 /* ChatContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55458242A53E500EEB9A9 /* ChatContentCell.swift */; };
+		35A5545B242A53E500EEB9A9 /* ChatContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A55459242A53E500EEB9A9 /* ChatContentCell.xib */; };
 		7841C9542420D91300890FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9532420D91300890FC3 /* AppDelegate.swift */; };
 		7841C9562420D91300890FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841C9552420D91300890FC3 /* SceneDelegate.swift */; };
 		7841C95B2420D91300890FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7841C9592420D91300890FC3 /* Main.storyboard */; };
@@ -59,7 +71,7 @@
 		78A8222D2424C5CF007AA69D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8222C2424C5CF007AA69D /* NibLoadable.swift */; };
 		78A822302424CA12007AA69D /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78A8222E2424CA12007AA69D /* QHNormalEmotionSort.plist */; };
 		78A822312424CA12007AA69D /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78A8222F2424CA12007AA69D /* QHSohuGifSort.plist */; };
-		7F6E02CD8759215CFF4DE799 /* Pods_HHYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */; };
+		BAA22645051AD759ABC9CAD8 /* Pods_HHYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +97,18 @@
 		350E5FD924289EE500D32F5A /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		350E5FDB24289EF000D32F5A /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
 		350E5FDC24289EF000D32F5A /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		35A55443242A492F00EEB9A9 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		35A55444242A492F00EEB9A9 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		35A55445242A492F00EEB9A9 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		35A55446242A492F00EEB9A9 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		35A55447242A492F00EEB9A9 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		35A55448242A492F00EEB9A9 /* HHYSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYSocket.swift; sourceTree = "<group>"; };
+		35A5544F242A49E500EEB9A9 /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
+		35A55450242A49E500EEB9A9 /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = IMMessage.proto; sourceTree = "<group>"; };
+		35A55454242A4E1200EEB9A9 /* ChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		35A55456242A4E2000EEB9A9 /* ChatContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatContentView.xib; sourceTree = "<group>"; };
+		35A55458242A53E500EEB9A9 /* ChatContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentCell.swift; sourceTree = "<group>"; };
+		35A55459242A53E500EEB9A9 /* ChatContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatContentCell.xib; sourceTree = "<group>"; };
 		4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9502420D91300890FC3 /* HHYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7841C9532420D91300890FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F6E02CD8759215CFF4DE799 /* Pods_HHYTV.framework in Frameworks */,
+				BAA22645051AD759ABC9CAD8 /* Pods_HHYTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +202,38 @@
 				350E5FD424289CCF00D32F5A /* GiftViewCell.xib */,
 			);
 			path = GiftView;
+			sourceTree = "<group>";
+		};
+		35A55441242A492F00EEB9A9 /* HHYSocket */ = {
+			isa = PBXGroup;
+			children = (
+				35A55442242A492F00EEB9A9 /* ysocket */,
+				35A55448242A492F00EEB9A9 /* HHYSocket.swift */,
+			);
+			path = HHYSocket;
+			sourceTree = "<group>";
+		};
+		35A55442242A492F00EEB9A9 /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				35A55443242A492F00EEB9A9 /* yudpsocket.c */,
+				35A55444242A492F00EEB9A9 /* yudpsocket.swift */,
+				35A55445242A492F00EEB9A9 /* ytcpsocket.c */,
+				35A55446242A492F00EEB9A9 /* ysocket.swift */,
+				35A55447242A492F00EEB9A9 /* ytcpsocket.swift */,
+			);
+			path = ysocket;
+			sourceTree = "<group>";
+		};
+		35A55453242A4DFE00EEB9A9 /* ChatContentView */ = {
+			isa = PBXGroup;
+			children = (
+				35A55454242A4E1200EEB9A9 /* ChatContentView.swift */,
+				35A55456242A4E2000EEB9A9 /* ChatContentView.xib */,
+				35A55458242A53E500EEB9A9 /* ChatContentCell.swift */,
+				35A55459242A53E500EEB9A9 /* ChatContentCell.xib */,
+			);
+			path = ChatContentView;
 			sourceTree = "<group>";
 		};
 		7841C9472420D91200890FC3 = {
@@ -260,6 +316,7 @@
 		7841C96B2420D97700890FC3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				35A55441242A492F00EEB9A9 /* HHYSocket */,
 				3502DC002427E60E0059306B /* HHYPageView */,
 				78A822272424BFA5007AA69D /* Protocol */,
 				7872C3D424237CE200C7A1FB /* Common */,
@@ -421,6 +478,8 @@
 		78A821FD24249603007AA69D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35A55450242A49E500EEB9A9 /* IMMessage.proto */,
+				35A5544F242A49E500EEB9A9 /* Immessage.proto.swift */,
 				350E5FC924288A7300D32F5A /* Emoticon.swift */,
 				350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */,
 				350E5FDC24289EF000D32F5A /* GiftModel.swift */,
@@ -432,6 +491,7 @@
 		78A821FE24249603007AA69D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35A55453242A4DFE00EEB9A9 /* ChatContentView */,
 				350E5FD024289C8100D32F5A /* GiftView */,
 				35051F8C24276FB10082DA41 /* ChatView */,
 			);
@@ -475,7 +535,7 @@
 				7841C94C2420D91300890FC3 /* Sources */,
 				7841C94D2420D91300890FC3 /* Frameworks */,
 				7841C94E2420D91300890FC3 /* Resources */,
-				E460BC9266DCCF0B67F5BD72 /* [CP] Embed Pods Frameworks */,
+				39C68E8901707D47C6251B8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -526,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7841C9602420D91300890FC3 /* LaunchScreen.storyboard in Resources */,
+				35A5545B242A53E500EEB9A9 /* ChatContentCell.xib in Resources */,
 				78A8220224249615007AA69D /* RoomViewController.xib in Resources */,
 				350E5FD824289CCF00D32F5A /* GiftViewCell.xib in Resources */,
 				35051F9224276FB10082DA41 /* EmoticonViewCell.xib in Resources */,
@@ -535,6 +596,7 @@
 				35051F9424276FB10082DA41 /* ChatToolsView.xib in Resources */,
 				350E5FD524289CCF00D32F5A /* GiftListView.xib in Resources */,
 				7872C3E424237E6800C7A1FB /* types.plist in Resources */,
+				35A55457242A4E2000EEB9A9 /* ChatContentView.xib in Resources */,
 				78A822302424CA12007AA69D /* QHNormalEmotionSort.plist in Resources */,
 				7841C95B2420D91300890FC3 /* Main.storyboard in Resources */,
 			);
@@ -543,6 +605,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		39C68E8901707D47C6251B8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B473717E653A6F1985D0DD9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,23 +655,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E460BC9266DCCF0B67F5BD72 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHYTV/Pods-HHYTV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -591,22 +664,31 @@
 			files = (
 				7872C444242386B400C7A1FB /* HHYWaterFallLayout.swift in Sources */,
 				7872C3E924237ECB00C7A1FB /* BaseModel.swift in Sources */,
+				35A5544E242A492F00EEB9A9 /* HHYSocket.swift in Sources */,
+				35A5545A242A53E500EEB9A9 /* ChatContentCell.swift in Sources */,
 				350E5FDA24289EE500D32F5A /* GiftViewModel.swift in Sources */,
 				35051F9324276FB10082DA41 /* EmoticonViewCell.swift in Sources */,
 				7841C9702420D9E500890FC3 /* MainViewController.swift in Sources */,
 				78A8222D2424C5CF007AA69D /* NibLoadable.swift in Sources */,
+				35A5544A242A492F00EEB9A9 /* yudpsocket.swift in Sources */,
 				78A821FA2424735A007AA69D /* KingfisherExtension.swift in Sources */,
+				35A55455242A4E1200EEB9A9 /* ChatContentView.swift in Sources */,
 				3502DC082427E60E0059306B /* HHYContentView.swift in Sources */,
 				350E5FD724289CCF00D32F5A /* GiftViewCell.swift in Sources */,
 				7841C9782420DA4700890FC3 /* DiscoverViewController.swift in Sources */,
+				35A55452242A49E500EEB9A9 /* IMMessage.proto in Sources */,
 				7872C4492423881900C7A1FB /* HomeViewCell.swift in Sources */,
 				7841C9762420DA3F00890FC3 /* RankViewController.swift in Sources */,
 				7872C3DA24237D1F00C7A1FB /* HomeViewController.swift in Sources */,
 				350E5FDE24289EF000D32F5A /* GiftModel.swift in Sources */,
 				3502DC072427E60E0059306B /* HHYPageCollectionView.swift in Sources */,
+				35A55451242A49E500EEB9A9 /* Immessage.proto.swift in Sources */,
 				7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */,
 				3502DC0C2427E60E0059306B /* HHYPageView.swift in Sources */,
+				35A5544C242A492F00EEB9A9 /* ysocket.swift in Sources */,
+				35A55449242A492F00EEB9A9 /* yudpsocket.c in Sources */,
 				78A821F82424734A007AA69D /* NetworkTools.swift in Sources */,
+				35A5544B242A492F00EEB9A9 /* ytcpsocket.c in Sources */,
 				7841C9722420DA0300890FC3 /* HHYNavigationController.swift in Sources */,
 				78A8220124249615007AA69D /* RoomViewController.swift in Sources */,
 				7872C3EB24237F1400C7A1FB /* HomeType.swift in Sources */,
@@ -624,6 +706,7 @@
 				350E5FCA24288A7300D32F5A /* Emoticon.swift in Sources */,
 				78A822292424BFAA007AA69D /* Emitterable.swift in Sources */,
 				350E5FDD24289EF000D32F5A /* GiftPackage.swift in Sources */,
+				35A5544D242A492F00EEB9A9 /* ytcpsocket.swift in Sources */,
 				350E5FCF24288BBE00D32F5A /* EmoticonViewModel.swift in Sources */,
 				7872C442242386A400C7A1FB /* HomeViewModel.swift in Sources */,
 				3502DBFF2427E5B50059306B /* EmoticonView.swift in Sources */,

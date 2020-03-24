@@ -1,14 +1,18 @@
 
 platform :ios, '9.0'
-use_frameworks!
 
 target 'HHYTV' do
+  use_frameworks!
 
-pod 'Moya'
-pod 'Moya/RxSwift'
+#pod 'Moya'
+#pod 'Moya/RxSwift'
+#pod 'SnapKit'
+pod 'HandyJSON',:git => 'https://github.com/alibaba/HandyJSON.git', :branch => 'dev_for_swift5.0'
+#pod 'SwiftyJSON'
+
 pod 'Kingfisher'
-pod 'SnapKit'
-pod 'HandyJSON'
-pod 'SwiftyJSON'
+pod "Alamofire"
+
+pod 'ProtocolBuffers-Swift'
 
 end

@@ -17,8 +17,7 @@ class GiftViewCell: UICollectionViewCell {
     
     var giftModel : GiftModel? {
         didSet {
-            iconImageView.kf.setImage(with: URL(string: giftModel!.img2), placeholder: UIImage(named: "room_btn_gift"))
-//            iconImageView.setImage(giftModel?.img2, "room_btn_gift")
+            iconImageView.kf.setImage(with: URL(string: giftModel?.img2 ?? ""), placeholder: UIImage(named: "room_btn_gift"))
             subjectLabel.text = giftModel?.subject
             priceLabel.text = "\(giftModel?.coin ?? 0)"
         }
