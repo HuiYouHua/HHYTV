@@ -18,6 +18,7 @@
 		35051F9224276FB10082DA41 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */; };
 		35051F9324276FB10082DA41 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */; };
 		35051F9424276FB10082DA41 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35051F9024276FB10082DA41 /* ChatToolsView.xib */; };
+		35085261242B3789005A8A50 /* AttrStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35085260242B3789005A8A50 /* AttrStringGenerator.swift */; };
 		350E5FCA24288A7300D32F5A /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FC924288A7300D32F5A /* Emoticon.swift */; };
 		350E5FCC24288AB600D32F5A /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */; };
 		350E5FCF24288BBE00D32F5A /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */; };
@@ -87,6 +88,7 @@
 		35051F8E24276FB10082DA41 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
 		35051F8F24276FB10082DA41 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
 		35051F9024276FB10082DA41 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		35085260242B3789005A8A50 /* AttrStringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttrStringGenerator.swift; sourceTree = "<group>"; };
 		350E5FC924288A7300D32F5A /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		350E5FCB24288AB600D32F5A /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
 		350E5FCE24288BBE00D32F5A /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 			children = (
 				78A821F72424734A007AA69D /* NetworkTools.swift */,
 				78A821F92424735A007AA69D /* KingfisherExtension.swift */,
+				35085260242B3789005A8A50 /* AttrStringGenerator.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				7841CA8B24220F7A00890FC3 /* UIColor-Extension.swift in Sources */,
 				3502DC0C2427E60E0059306B /* HHYPageView.swift in Sources */,
 				35A5544C242A492F00EEB9A9 /* ysocket.swift in Sources */,
+				35085261242B3789005A8A50 /* AttrStringGenerator.swift in Sources */,
 				35A55449242A492F00EEB9A9 /* yudpsocket.c in Sources */,
 				78A821F82424734A007AA69D /* NetworkTools.swift in Sources */,
 				35A5544B242A492F00EEB9A9 /* ytcpsocket.c in Sources */,

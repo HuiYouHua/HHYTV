@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 private let kChatToosViewHeight: CGFloat = 44
 private let kGiftlistViewHeight : CGFloat = 370
@@ -164,63 +165,22 @@ extension RoomViewController: ChatToolsViewDelegate, GiftListViewDelegate {
 
 extension RoomViewController: HHYSocketDelegate {
     func socket(_ socket: HHYSocket, joinRoom user: UserInfo) {
-        let message = "\(user.name!) 进入房间"
-        let attr = NSMutableAttributedString(string: message)
-        attr.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange], range: NSRange(location: 0, length: user.name.count))
+        let attr = AttrStringGenerator.generateJoinLeaveRoom(user.name!, true)
         chatContentView.inserMsg(attr)
     }
     
     func socket(_ socket: HHYSocket, leaveRoom user: UserInfo) {
-        let message = "\(user.name!) 离开房间"
-        let attr = NSMutableAttributedString(string: message)
-
+        let attr = AttrStringGenerator.generateJoinLeaveRoom(user.name!, false)
         chatContentView.inserMsg(attr)
     }
     
     func socket(_ socket: HHYSocket, chatMessage: ChatMessage) {
-        // 1.获取整个字符串
-        let message = "\(chatMessage.user.name!): \(chatMessage.text!)"
-        
-        // 2.创建属性字符串
-        let attr = NSMutableAttributedString(string: message)
-       
-        // 3.将名称加色
-        attr.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange], range: NSRange(location: 0, length: chatMessage.user.name.count))
-        
-        // 4.将所有表情匹配出来,并换乘对应的图片进行展示
-        // 4.1.创建正则表达式匹配规则
-        let pattern = "\\[.*?\\]"
-        guard let regex = try? NSRegularExpression(pattern: pattern, options: []) else { return }
-        let results = regex.matches(in: message, options: [], range: NSRange(location: 0, length: message.count))
-        
-        // 4.2.获取表情的结果(从后往前遍历)
-        for i in (0..<results.count).reversed() {
-            // 4.3.获取结果
-            let result = results[i]
-            let emoticonName = (message as NSString).substring(with: result.range)
-            
-            // 4.4.根据结果创建对应的图片
-            guard let image = UIImage(named: emoticonName) else { continue }
-            
-            // 4.5.根据图片创建NSTextAttachment
-            let attachment = NSTextAttachment()
-            attachment.image = image
-            let fontSize = UIFont.systemFont(ofSize: 17)
-            attachment.bounds = CGRect(x: 0, y: -3, width: fontSize.lineHeight, height: fontSize.lineHeight)
-            let imageAttStr = NSAttributedString(attachment: attachment)
-            
-            // 4.6.将imageAttStr替换之前的文本位置
-            attr.replaceCharacters(in: result.range, with: imageAttStr)
-        }
-        
-        // 5.插入富文本
+        let attr = AttrStringGenerator.generatorTextMessage(chatMessage.user.name!, chatMessage.text!)
         chatContentView.inserMsg(attr)
     }
     
     func socket(_ socket: HHYSocket, giftMessage: GiftMessage) {
-        let message = "\(giftMessage.user.name!) 赠送 \(giftMessage.giftname!) \(giftMessage.giftUrl!)"
-        let attr = NSMutableAttributedString(string: message)
-
+        let attr = AttrStringGenerator.generatorGiftMessage(giftMessage.user.name!, giftMessage.giftname!, giftMessage.giftUrl!)
         chatContentView.inserMsg(attr)
     }
 }
