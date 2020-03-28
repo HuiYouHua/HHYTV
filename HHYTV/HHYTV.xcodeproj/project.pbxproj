@@ -29,6 +29,7 @@
 		350E5FDA24289EE500D32F5A /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FD924289EE500D32F5A /* GiftViewModel.swift */; };
 		350E5FDD24289EF000D32F5A /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FDB24289EF000D32F5A /* GiftPackage.swift */; };
 		350E5FDE24289EF000D32F5A /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E5FDC24289EF000D32F5A /* GiftModel.swift */; };
+		3588CC2A242F61FA00CB6ECC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3588CC29242F61FA00CB6ECC /* libz.tbd */; };
 		35A55449242A492F00EEB9A9 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 35A55443242A492F00EEB9A9 /* yudpsocket.c */; };
 		35A5544A242A492F00EEB9A9 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A55444242A492F00EEB9A9 /* yudpsocket.swift */; };
 		35A5544B242A492F00EEB9A9 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 35A55445242A492F00EEB9A9 /* ytcpsocket.c */; };
@@ -99,6 +100,7 @@
 		350E5FD924289EE500D32F5A /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		350E5FDB24289EF000D32F5A /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
 		350E5FDC24289EF000D32F5A /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		3588CC29242F61FA00CB6ECC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		35A55443242A492F00EEB9A9 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
 		35A55444242A492F00EEB9A9 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
 		35A55445242A492F00EEB9A9 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3588CC2A242F61FA00CB6ECC /* libz.tbd in Frameworks */,
 				BAA22645051AD759ABC9CAD8 /* Pods_HHYTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +516,7 @@
 		7E90C58602B2D8DFA911B369 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3588CC29242F61FA00CB6ECC /* libz.tbd */,
 				4ECE0576198C8E0E6A384AB2 /* Pods_HHYTV.framework */,
 			);
 			name = Frameworks;
@@ -868,6 +872,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HHYTV/YYKit/Vendor",
 					"$(PROJECT_DIR)/HHYTV/Classes/Third",
+					"$(PROJECT_DIR)/HHYTV/Classes/Resource",
 				);
 				INFOPLIST_FILE = HHYTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -897,6 +902,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HHYTV/YYKit/Vendor",
 					"$(PROJECT_DIR)/HHYTV/Classes/Third",
+					"$(PROJECT_DIR)/HHYTV/Classes/Resource",
 				);
 				INFOPLIST_FILE = HHYTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

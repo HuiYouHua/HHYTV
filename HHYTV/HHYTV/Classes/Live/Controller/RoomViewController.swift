@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import IJKMediaFramework
 
 private let kChatToosViewHeight: CGFloat = 44
 private let kGiftlistViewHeight : CGFloat = 370
@@ -19,10 +20,13 @@ class RoomViewController: UIViewController {
     @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var bottomView: UIStackView!
     
+    var anchorModel: AnchorModel?
+    
     fileprivate lazy var chatToolsView: ChatToolsView = ChatToolsView.loadFromNib()
     fileprivate lazy var giftListView: GiftListView = GiftListView.loadFromNib()
     fileprivate lazy var chatContentView: ChatContentView = ChatContentView.loadFromNib()
     fileprivate lazy var socket: HHYSocket = HHYSocket(addr: "192.168.1.101", port: 8080)
+    fileprivate var ijkplayer: IJKFFMoviePlayerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +44,9 @@ class RoomViewController: UIViewController {
             socket.startReadMsg()
             socket.sendJoinRoom()
         }
+        
+        // 4.请求主播信息
+        loadAnchorLiveAddress()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +61,7 @@ class RoomViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         socket.sendLeaveRoom()
+        ijkplayer?.shutdown()
     }
 }
 
@@ -127,6 +135,31 @@ extension RoomViewController: Emitter {
     }
 }
 
+
+// MARK: - 请求主播信息
+extension RoomViewController {
+    fileprivate func loadAnchorLiveAddress() {
+        // ....
+        // 1.获取直播地址
+        let url = "rtmp://202.69.69.180:443/webcast/bshdlive-pc"
+        
+        // 2.播放
+        let options = IJKFFOptions.byDefault()
+        options?.setOptionIntValue(1, forKey: "videotoolbox", of: kIJKFFOptionCategoryPlayer)
+        let ijkplayer = IJKFFMoviePlayerController(contentURLString: url, with: options)
+        self.ijkplayer = ijkplayer
+        
+        // 3.设置frame
+//        ijkplayer?.view.frame = bgImageView.bounds
+        ijkplayer?.view.bounds = CGRect(origin: CGPoint.zero, size: CGSize(width: kScreenW, height: kScreenW * 3 / 4))
+        ijkplayer?.view.center = bgImageView.center
+        bgImageView.addSubview(ijkplayer!.view)
+        ijkplayer?.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // 4.开始播放
+        ijkplayer?.prepareToPlay()
+    }
+}
 
 // MARK: - 监听键盘弹出
 extension RoomViewController {
